@@ -2,8 +2,24 @@ import java.util.Date;
 
 public class Course {
     private String name;
-    private Date startdata;
+    private Date startdate;
     private Date enddate;
 
+    public Course(String name, Date startdate, Date enddate) {
+        this.name = name;
+        this.startdate = startdate;
+        this.enddate = enddate;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public Date getStartdate() {
+        return startdate;
+    }
+
+    public Date getEnddate() {
+        return enddate;
+    }
 }
