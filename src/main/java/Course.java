@@ -6,6 +6,11 @@ public class Course {
     private Date enddate;
 
     public Course(String name, Date startdate, Date enddate) {
+        if (startdate.compareTo(enddate) > 0){
+//            System.out.println("Hello");
+            throw new IllegalArgumentException(
+                    "End date should be after start date!");
+        }
         this.name = name;
         this.startdate = startdate;
         this.enddate = enddate;
