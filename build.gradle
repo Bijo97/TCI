@@ -13,4 +13,6 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'pl.pragmatists', name: 'JUnitParams', version: '1.0.4'
     compile 'org.hamcrest:hamcrest-core:2.1-rc2'
+    // for mocking
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.23.0'
 }
