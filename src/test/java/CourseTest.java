@@ -11,7 +11,7 @@ public class CourseTest {
         //Arrange
         Boolean expect = false;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Course course = new Course("TCI", sdf.parse("2018-11-22"), sdf.parse("2018-11-23"));
+        Course course = new Course("TCI", sdf.parse("2018-11-23"), sdf.parse("2018-11-22"));
 
         //Act
 

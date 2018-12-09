@@ -2,21 +2,25 @@ package book;
 
 public class Chapter {
     private String name;
-    private int number;
+    private String number;
 
     public Chapter() {
     }
 
-    public Chapter(String name, int number) {
+    public Chapter(String name, String number) {
+        if (name.equals(null) || !number.matches("^\\d+(\\.\\d+)?$")){
+            throw new IllegalArgumentException("Name & number must be a string and number must be two level maximum!");
+        }
+
         this.name = name;
         this.number = number;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
-    public int getNumber() {
-        return number;
+    public String getNumber() {
+        return this.number;
     }
 }
